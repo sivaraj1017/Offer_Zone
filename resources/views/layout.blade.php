@@ -172,7 +172,7 @@
                                 <li class="menu-item">
                                     <a href="/about" class="item-link">
                                         <span class="text cus-text">
-                                            About Us
+                                            pawan Us
                                         </span>
                                     </a>
                                 </li>
