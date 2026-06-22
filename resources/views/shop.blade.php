@@ -1,0 +1,2517 @@
+@extends('layout')
+@section('content')
+    <!-- Page Title -->
+    <section class="section-page-title text-center flat-spacing-2 pb-0">
+        <div class="container">
+            <div class="main-page-title">
+                <div class="breadcrumbs">
+                    <a href="/" class="text-caption-01 cl-text-3 link">Home</a>
+                    <i class="icon icon-CaretRightThin cl-text-3"></i>
+                    <P class="text-caption-01">
+                        Tops & Shirts
+                    </P>
+                </div>
+                <h3>
+                    Tops & Shirts
+                </h3>
+                <p class="text-body-1 cl-text-2">
+                    Step into our Tops & Shirts Collection, where elegance meets confidence in styles
+                    <br class="d-none d-lg-block">
+                    that inspire every moment.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- /Page Title -->
+    <!-- Shop -->
+    <div class="flat-spacing">
+        <div class="container-full">
+            <div class="tf-shop-control sticky-top no-offset">
+                <a href="#filterShop" data-bs-toggle="offcanvas" class="tf-btn-filter">
+                    <span class="icon icon-filter"></span>
+                    <span class="text">Show Filters</span>
+                </a>
+                <ul class="tf-control-layout">
+                    <li class="tf-view-layout-switch sw-layout-list list-layout" data-value-layout="list">
+                        <i class="icon-List"></i>
+                    </li>
+                    <li class="tf-view-layout-switch sw-layout-2" data-value-layout="tf-col-2">
+                        <i class="icon-grid-2"></i>
+                    </li>
+                    <li class="tf-view-layout-switch sw-layout-3 d-none d-md-flex" data-value-layout="tf-col-3">
+                        <i class="icon-grid-3"></i>
+                    </li>
+                    <li class="tf-view-layout-switch sw-layout-4 active d-none d-lg-flex" data-value-layout="tf-col-4">
+                        <i class="icon-grid-4"></i>
+                    </li>
+                    <li class="tf-view-layout-switch sw-layout-5 d-none d-xxl-flex" data-value-layout="tf-col-5">
+                        <i class="icon-grid-5"></i>
+                    </li>
+                    <li class="tf-view-layout-switch sw-layout-6 d-none d-xxl-flex" data-value-layout="tf-col-6">
+                        <i class="icon-grid-6"></i>
+                    </li>
+                </ul>
+                <div class="tf-control-sorting">
+                    <div class="tf-dropdown-sort" data-bs-toggle="dropdown">
+                        <div class="btn-select">
+                            <span class="text-sort-value">Best Selling</span>
+                            <span class="icon icon-CaretDown"></span>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="select-item active remove-all-filters" data-sort-value="best-selling">
+                                <span class="text-value-item">Best Selling</span>
+                            </div>
+                            <div class="select-item" data-sort-value="a-z">
+                                <span class="text-value-item">Alphabetically, A-Z</span>
+                            </div>
+                            <div class="select-item" data-sort-value="z-a">
+                                <span class="text-value-item">Alphabetically, Z-A</span>
+                            </div>
+                            <div class="select-item" data-sort-value="price-low-high">
+                                <span class="text-value-item">Price, low to high</span>
+                            </div>
+                            <div class="select-item" data-sort-value="price-high-low">
+                                <span class="text-value-item">Price, high to low</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-control-shop gridLayout-wrapper">
+                <div class="meta-filter-shop">
+                    <div id="product-count-grid" class="count-text text-caption-01"></div>
+                    <div id="product-count-list" class="count-text text-caption-01"></div>
+                    <div class="br-line type-vertical"></div>
+                    <div id="applied-filters"></div>
+                    <button id="remove-all" class="remove-all-filters" style="display: none;">
+                        <i class="icon icon-X2"></i>
+                        Clear all
+                    </button>
+                </div>
+                <div class="tf-list-layout wrapper-shop" id="listLayout" style="display: none;">
+                    <!-- Product 1 -->
+                    <div class="card-product product-style_list" data-availability="In Stock" data-brand="Louis Vuitton">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-1.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-1_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 new">NEW</li>
+                            </ul>
+                            <div class="product-marquee_sale">
+                                <div class="marquee-wrapper">
+                                    <div class="initial-child-container">
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Lyocell wrap top
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$69,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$99,99</span>
+                            </div>
+                            <p class="description text-caption-01 mb-10">
+                                Button-up shirt sleeves and a relaxed silhouette. It’s tailored
+                                with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose —
+                                responsibly sourced wood-based fibres produced through a process that reduces...
+                            </p>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-1.jpg"
+                                        data-src="assets/images/product/product-1.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Dark Blue</span>
+                                    <span class="swatch-value bg-dark-blue-gray"></span>
+                                    <img src="assets/images/product/product-1_3.jpg"
+                                        data-src="assets/images/product/product-1_3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Gray</span>
+                                    <span class="swatch-value bg-soft-gray"></span>
+                                    <img src="assets/images/product/product-1_4.jpg"
+                                        data-src="assets/images/product/product-1_4.jpg" alt="Image">
+                                </li>
+                            </ul>
+                            <ul class="product-size_list mb-10">
+                                <li class="size-item text-caption-01">XS</li>
+                                <li class="size-item text-caption-01">S</li>
+                                <li class="size-item text-caption-01">M</li>
+                            </ul>
+                            <ul class="product-action_list">
+                                <li>
+                                    <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Handbag"></span>
+                                        <span class="tooltip">Add to Cart</span>
+                                    </a>
+                                </li>
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="card-product product-style_list" data-availability="In Stock" data-brand="Nike">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-2.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-2_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 sale">-25%</li>
+                            </ul>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Buttons cotton top
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$29,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$49,99</span>
+                            </div>
+                            <p class="description text-caption-01 mb-10">
+                                Button-up shirt sleeves and a relaxed silhouette. It’s tailored
+                                with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose —
+                                responsibly sourced wood-based fibres produced through a process that reduces...
+                            </p>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-2.jpg"
+                                        data-src="assets/images/product/product-2.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Beige</span>
+                                    <span class="swatch-value bg-stone-beige"></span>
+                                    <img src="assets/images/product/product-2_3.jpg"
+                                        data-src="assets/images/product/product-2_3.jpg" alt="Image">
+                                </li>
+                            </ul>
+                            <ul class="product-size_list mb-10">
+                                <li class="size-item text-caption-01">XS</li>
+                                <li class="size-item text-caption-01">S</li>
+                                <li class="size-item text-caption-01">M</li>
+                            </ul>
+                            <ul class="product-action_list">
+                                <li>
+                                    <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Handbag"></span>
+                                        <span class="tooltip">Add to Cart</span>
+                                    </a>
+                                </li>
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="card-product product-style_list" data-availability="Out of stock" data-brand="Hermes">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-3.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-3_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 sale">-25%</li>
+                            </ul>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Wool Midi Coat
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$15,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$25,99</span>
+                            </div>
+                            <p class="description text-caption-01 mb-10">
+                                Button-up shirt sleeves and a relaxed silhouette. It’s tailored
+                                with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose —
+                                responsibly sourced wood-based fibres produced through a process that reduces...
+                            </p>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-3.jpg"
+                                        data-src="assets/images/product/product-3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Dark Blue</span>
+                                    <span class="swatch-value bg-dark-blue-gray"></span>
+                                    <img src="assets/images/product/product-3_3.jpg"
+                                        data-src="assets/images/product/product-3_3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Beige</span>
+                                    <span class="swatch-value bg-stone-beige"></span>
+                                    <img src="assets/images/product/product-3_4.jpg"
+                                        data-src="assets/images/product/product-3_4.jpg" alt="Image">
+                                </li>
+                            </ul>
+                            <ul class="product-size_list mb-10">
+                                <li class="size-item text-caption-01">XS</li>
+                                <li class="size-item text-caption-01">S</li>
+                                <li class="size-item text-caption-01">M</li>
+                            </ul>
+                            <ul class="product-action_list">
+                                <li>
+                                    <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Handbag"></span>
+                                        <span class="tooltip">Add to Cart</span>
+                                    </a>
+                                </li>
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="card-product product-style_list" data-availability="In Stock" data-brand="Nike">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-4.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-4_2.jpg" alt="Product">
+                            </a>
+                            <div class="product-countdown">
+                                <div class="js-countdown cd-has-zero" data-timer="1093120" data-labels="D : ,H : ,M : ,S">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                linen slim-fit shirt
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$45,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$79,99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="card-product product-style_list" data-availability="In Stock" data-brand="Hermes">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-5.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-5_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 new">NEW</li>
+                            </ul>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                High neck midi wool coat
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$9,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$19,99</span>
+                            </div>
+                            <p class="description text-caption-01 mb-10">
+                                Button-up shirt sleeves and a relaxed silhouette. It’s tailored
+                                with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose —
+                                responsibly sourced wood-based fibres produced through a process that reduces...
+                            </p>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-5.jpg"
+                                        data-src="assets/images/product/product-5.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Dark Blue</span>
+                                    <span class="swatch-value bg-dark-blue-gray"></span>
+                                    <img src="assets/images/product/product-5_3.jpg"
+                                        data-src="assets/images/product/product-5_3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Beige </span>
+                                    <span class="swatch-value bg-stone-beige"></span>
+                                    <img src="assets/images/product/product-5_4.jpg"
+                                        data-src="assets/images/product/product-5_4.jpg" alt="Image">
+                                </li>
+                            </ul>
+                            <ul class="product-size_list mb-10">
+                                <li class="size-item text-caption-01">XS</li>
+                                <li class="size-item text-caption-01">S</li>
+                                <li class="size-item text-caption-01">M</li>
+                            </ul>
+                            <ul class="product-action_list">
+                                <li>
+                                    <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Handbag"></span>
+                                        <span class="tooltip">Add to Cart</span>
+                                    </a>
+                                </li>
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="card-product product-style_list" data-availability="In Stock" data-brand="Zalando">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-6.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-6_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 sale">-25%</li>
+                            </ul>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Square metallic frame sunglasses
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$34,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$59,99</span>
+                            </div>
+                            <p class="description text-caption-01 mb-10">
+                                Button-up shirt sleeves and a relaxed silhouette. It’s tailored
+                                with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose —
+                                responsibly sourced wood-based fibres produced through a process that reduces...
+                            </p>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-6.jpg"
+                                        data-src="assets/images/product/product-6.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Gray</span>
+                                    <span class="swatch-value bg-steel-gray"></span>
+                                    <img src="assets/images/product/product-6_3.jpg"
+                                        data-src="assets/images/product/product-6_3.jpg" alt="Image">
+                                </li>
+                            </ul>
+                            <ul class="product-size_list mb-10">
+                                <li class="size-item text-caption-01">XS</li>
+                                <li class="size-item text-caption-01">S</li>
+                                <li class="size-item text-caption-01">M</li>
+                            </ul>
+                            <ul class="product-action_list">
+                                <li>
+                                    <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Handbag"></span>
+                                        <span class="tooltip">Add to Cart</span>
+                                    </a>
+                                </li>
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 7 -->
+                    <div class="card-product product-style_list" data-availability="In Stock" data-brand="Louis Vuitton">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-7.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-7_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 sale">-25%</li>
+                            </ul>
+                            <div class="product-marquee_sale">
+                                <div class="marquee-wrapper">
+                                    <div class="initial-child-container">
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Leather shopper bag with stitching
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$22,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$39,99</span>
+                            </div>
+                            <p class="description text-caption-01 mb-10">
+                                Button-up shirt sleeves and a relaxed silhouette. It’s tailored
+                                with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose —
+                                responsibly sourced wood-based fibres produced through a process that reduces...
+                            </p>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-7.jpg"
+                                        data-src="assets/images/product/product-7.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Sand Brown</span>
+                                    <span class="swatch-value bg-sand-brown"></span>
+                                    <img src="assets/images/product/product-7_3.jpg"
+                                        data-src="assets/images/product/product-7_3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Pink</span>
+                                    <span class="swatch-value bg-dusty-rose"></span>
+                                    <img src="assets/images/product/product-7_4.jpg"
+                                        data-src="assets/images/product/product-7_4.jpg" alt="Image">
+                                </li>
+                            </ul>
+                            <ul class="product-size_list mb-10">
+                                <li class="size-item text-caption-01">XS</li>
+                                <li class="size-item text-caption-01">S</li>
+                                <li class="size-item text-caption-01">M</li>
+                            </ul>
+                            <ul class="product-action_list">
+                                <li>
+                                    <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Handbag"></span>
+                                        <span class="tooltip">Add to Cart</span>
+                                    </a>
+                                </li>
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="card-product product-style_list" data-availability="In Stock" data-brand="Gucci">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-8.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-8_2.jpg" alt="Product">
+                            </a>
+                            <div class="product-countdown">
+                                <div class="js-countdown cd-has-zero" data-timer="1093120" data-labels="D : ,H : ,M : ,S">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Leather shopper bag with stitching
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$67,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$99,99</span>
+                            </div>
+                            <p class="description text-caption-01 mb-10">
+                                Button-up shirt sleeves and a relaxed silhouette. It’s tailored
+                                with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose —
+                                responsibly sourced wood-based fibres produced through a process that reduces...
+                            </p>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Pink</span>
+                                    <span class="swatch-value bg-dusty-rose"></span>
+                                    <img src="assets/images/product/product-8.jpg"
+                                        data-src="assets/images/product/product-8.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Dark Blue</span>
+                                    <span class="swatch-value bg-dark-blue-gray"></span>
+                                    <img src="assets/images/product/product-8_3.jpg"
+                                        data-src="assets/images/product/product-8_3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Powder</span>
+                                    <span class="swatch-value bg-powder-pink"></span>
+                                    <img src="assets/images/product/product-8_4.jpg"
+                                        data-src="assets/images/product/product-8_4.jpg" alt="Image">
+                                </li>
+                            </ul>
+                            <ul class="product-size_list mb-10">
+                                <li class="size-item text-caption-01">XS</li>
+                                <li class="size-item text-caption-01">S</li>
+                                <li class="size-item text-caption-01">M</li>
+                            </ul>
+                            <ul class="product-action_list">
+                                <li>
+                                    <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Handbag"></span>
+                                        <span class="tooltip">Add to Cart</span>
+                                    </a>
+                                </li>
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 9 -->
+                    <div class="card-product product-style_list" data-availability="In Stock" data-brand="Adidas">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-9.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-9_2.jpg" alt="Product">
+                            </a>
+                            <div class="product-countdown">
+                                <div class="js-countdown cd-has-zero" data-timer="1093120" data-labels="D : ,H : ,M : ,S">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Oval shoulder bag
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$12,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$21,99</span>
+                            </div>
+                            <p class="description text-caption-01 mb-10">
+                                Button-up shirt sleeves and a relaxed silhouette. It’s tailored
+                                with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose —
+                                responsibly sourced wood-based fibres produced through a process that reduces...
+                            </p>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Purple</span>
+                                    <span class="swatch-value bg-soft-lavender"></span>
+                                    <img src="assets/images/product/product-9.jpg"
+                                        data-src="assets/images/product/product-9.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Dark Blue</span>
+                                    <span class="swatch-value bg-dark-blue-gray"></span>
+                                    <img src="assets/images/product/product-9_3.jpg"
+                                        data-src="assets/images/product/product-9_3.jpg" alt="Image">
+                                </li>
+                            </ul>
+                            <ul class="product-size_list mb-10">
+                                <li class="size-item text-caption-01">XS</li>
+                                <li class="size-item text-caption-01">S</li>
+                                <li class="size-item text-caption-01">M</li>
+                            </ul>
+                            <ul class="product-action_list">
+                                <li>
+                                    <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Handbag"></span>
+                                        <span class="tooltip">Add to Cart</span>
+                                    </a>
+                                </li>
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 10 -->
+                    <div class="card-product product-style_list" data-availability="Out of stock"
+                        data-brand="Louis Vuitton">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-10.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-10.jpg" alt="Product">
+                            </a>
+                            <div class="product-countdown">
+                                <div class="js-countdown cd-has-zero" data-timer="1093120" data-labels="D : ,H : ,M : ,S">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Oval shoulder bag
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$12,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$21,99</span>
+                            </div>
+                            <p class="description text-caption-01 mb-10">
+                                Button-up shirt sleeves and a relaxed silhouette. It’s tailored
+                                with drapey, crinkle-texture fabric that’s made from LENZING™ ECOVERO™ Viscose —
+                                responsibly sourced wood-based fibres produced through a process that reduces...
+                            </p>
+                            <ul class="product-size_list mb-10">
+                                <li class="size-item text-caption-01">XS</li>
+                                <li class="size-item text-caption-01">S</li>
+                                <li class="size-item text-caption-01">M</li>
+                            </ul>
+                            <ul class="product-action_list">
+                                <li>
+                                    <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Handbag"></span>
+                                        <span class="tooltip">Add to Cart</span>
+                                    </a>
+                                </li>
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas" class="hover-tooltip box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="wd-full justify-content-center">
+                        <div class="tf-page-pagination">
+                            <a href="#" class="pag-item">1</a>
+                            <p class="pag-item active">2</p>
+                            <a href="#" class="pag-item">3</a>
+                            <a href="#" class="pag-item">
+                                <i class="icon icon-CaretRightThin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-shop tf-grid-layout tf-col-4" id="gridLayout">
+                    <!-- Product 1 -->
+                    <div class="card-product grid" data-availability="In Stock" data-brand="Louis Vuitton">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-1.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-1_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 new">NEW</li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+                                </a>
+                            </div>
+                            <div class="product-marquee_sale">
+                                <div class="marquee-wrapper">
+                                    <div class="initial-child-container">
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Lyocell wrap top
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$69,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$99,99</span>
+                            </div>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-1.jpg"
+                                        data-src="assets/images/product/product-1.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Dark Blue</span>
+                                    <span class="swatch-value bg-dark-blue-gray"></span>
+                                    <img src="assets/images/product/product-1_3.jpg"
+                                        data-src="assets/images/product/product-1_3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Gray</span>
+                                    <span class="swatch-value bg-soft-gray"></span>
+                                    <img src="assets/images/product/product-1_4.jpg"
+                                        data-src="assets/images/product/product-1_4.jpg" alt="Image">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="card-product grid" data-availability="In Stock" data-brand="Nike">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-2.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-2_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 sale">-25%</li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Buttons cotton top
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$29,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$49,99</span>
+                            </div>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-2.jpg"
+                                        data-src="assets/images/product/product-2.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Beige</span>
+                                    <span class="swatch-value bg-stone-beige"></span>
+                                    <img src="assets/images/product/product-2_3.jpg"
+                                        data-src="assets/images/product/product-2_3.jpg" alt="Image">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="card-product grid has-size" data-availability="Out of stock" data-brand="Hermes">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-3.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-3_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 sale">-25%</li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+                                </a>
+                            </div>
+                            <div class="variant-box">
+                                <ul class="product-size_list">
+                                    <li class="size-item text-caption-01">XS</li>
+                                    <li class="size-item text-caption-01">S</li>
+                                    <li class="size-item text-caption-01">M</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Wool Midi Coat
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$15,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$25,99</span>
+                            </div>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-3.jpg"
+                                        data-src="assets/images/product/product-3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Dark Blue</span>
+                                    <span class="swatch-value bg-dark-blue-gray"></span>
+                                    <img src="assets/images/product/product-3_3.jpg"
+                                        data-src="assets/images/product/product-3_3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Beige</span>
+                                    <span class="swatch-value bg-stone-beige"></span>
+                                    <img src="assets/images/product/product-3_4.jpg"
+                                        data-src="assets/images/product/product-3_4.jpg" alt="Image">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="card-product grid has-size" data-availability="In Stock" data-brand="Nike">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-4.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-4_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+                                </a>
+                            </div>
+                            <div class="variant-box">
+                                <ul class="product-size_list">
+                                    <li class="size-item text-caption-01">XS</li>
+                                    <li class="size-item text-caption-01">S</li>
+                                    <li class="size-item text-caption-01">M</li>
+                                    <li class="size-item text-caption-01">L</li>
+                                </ul>
+                            </div>
+                            <div class="product-countdown">
+                                <div class="js-countdown cd-has-zero" data-timer="1093120" data-labels="D : ,H : ,M : ,S">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                linen slim-fit shirt
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$45,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$79,99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="card-product grid" data-availability="In Stock" data-brand="Hermes">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-5.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-5_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 new">NEW</li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                High neck midi wool coat
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$9,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$19,99</span>
+                            </div>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-5.jpg"
+                                        data-src="assets/images/product/product-5.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Dark Blue</span>
+                                    <span class="swatch-value bg-dark-blue-gray"></span>
+                                    <img src="assets/images/product/product-5_3.jpg"
+                                        data-src="assets/images/product/product-5_3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Beige </span>
+                                    <span class="swatch-value bg-stone-beige"></span>
+                                    <img src="assets/images/product/product-5_4.jpg"
+                                        data-src="assets/images/product/product-5_4.jpg" alt="Image">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="card-product grid has-size" data-availability="In Stock" data-brand="Zalando">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-6.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-6_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 sale">-25%</li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+                                </a>
+                            </div>
+                            <div class="variant-box">
+                                <ul class="product-size_list">
+                                    <li class="size-item text-caption-01">S</li>
+                                    <li class="size-item text-caption-01">M</li>
+                                    <li class="size-item text-caption-01">L</li>
+                                    <li class="size-item text-caption-01">XL</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Square metallic frame sunglasses
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$34,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$59,99</span>
+                            </div>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-6.jpg"
+                                        data-src="assets/images/product/product-6.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Gray</span>
+                                    <span class="swatch-value bg-steel-gray"></span>
+                                    <img src="assets/images/product/product-6_3.jpg"
+                                        data-src="assets/images/product/product-6_3.jpg" alt="Image">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 7 -->
+                    <div class="card-product grid" data-availability="In Stock" data-brand="Louis Vuitton">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-7.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-7_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 sale">-25%</li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+                                </a>
+                            </div>
+                            <div class="product-marquee_sale">
+                                <div class="marquee-wrapper">
+                                    <div class="initial-child-container">
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Leather shopper bag with stitching
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$22,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$39,99</span>
+                            </div>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-7.jpg"
+                                        data-src="assets/images/product/product-7.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Sand Brown</span>
+                                    <span class="swatch-value bg-sand-brown"></span>
+                                    <img src="assets/images/product/product-7_3.jpg"
+                                        data-src="assets/images/product/product-7_3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Pink</span>
+                                    <span class="swatch-value bg-dusty-rose"></span>
+                                    <img src="assets/images/product/product-7_4.jpg"
+                                        data-src="assets/images/product/product-7_4.jpg" alt="Image">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="card-product grid" data-availability="In Stock" data-brand="Gucci">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-8.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-8_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+                                </a>
+                            </div>
+                            <div class="product-countdown">
+                                <div class="js-countdown cd-has-zero" data-timer="1093120" data-labels="D : ,H : ,M : ,S">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Leather shopper bag with stitching
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$67,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$99,99</span>
+                            </div>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Pink</span>
+                                    <span class="swatch-value bg-dusty-rose"></span>
+                                    <img src="assets/images/product/product-8.jpg"
+                                        data-src="assets/images/product/product-8.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Dark Blue</span>
+                                    <span class="swatch-value bg-dark-blue-gray"></span>
+                                    <img src="assets/images/product/product-8_3.jpg"
+                                        data-src="assets/images/product/product-8_3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Powder</span>
+                                    <span class="swatch-value bg-powder-pink"></span>
+                                    <img src="assets/images/product/product-8_4.jpg"
+                                        data-src="assets/images/product/product-8_4.jpg" alt="Image">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 9 -->
+                    <div class="card-product grid" data-availability="In Stock" data-brand="Adidas">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-9.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-9_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+                                </a>
+                            </div>
+                            <div class="product-countdown">
+                                <div class="js-countdown cd-has-zero" data-timer="1093120" data-labels="D : ,H : ,M : ,S">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Oval shoulder bag
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$12,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$21,99</span>
+                            </div>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Purple</span>
+                                    <span class="swatch-value bg-soft-lavender"></span>
+                                    <img src="assets/images/product/product-9.jpg"
+                                        data-src="assets/images/product/product-9.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Dark Blue</span>
+                                    <span class="swatch-value bg-dark-blue-gray"></span>
+                                    <img src="assets/images/product/product-9_3.jpg"
+                                        data-src="assets/images/product/product-9_3.jpg" alt="Image">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 10 -->
+                    <div class="card-product grid" data-availability="Out of stock" data-brand="Louis Vuitton">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-10.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-10.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+                                </a>
+                            </div>
+                            <div class="product-countdown">
+                                <div class="js-countdown cd-has-zero" data-timer="1093120" data-labels="D : ,H : ,M : ,S">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Oval shoulder bag
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$12,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$21,99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 11 -->
+                    <div class="card-product grid" data-availability="Out of stock" data-brand="Nike">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-11.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-11.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#shoppingCart" data-bs-toggle="offcanvas" class="tf-btn btn-white small  w-100">
+                                    Add to cart
+
+                                </a>
+                            </div>
+                            <div class="product-marquee_sale">
+                                <div class="marquee-wrapper">
+                                    <div class="initial-child-container">
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Oval shoulder bag
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$12,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$21,99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 12 -->
+                    <div class="card-product grid" data-availability="In Stock" data-brand="Zalando">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-12.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-12_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 sale">-25%</li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Square metallic frame sunglasses
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$34,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$59,99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 13 -->
+                    <div class="card-product grid" data-availability="Out of stock" data-brand="Hermes">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-3.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-3_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 sale">-25%</li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Wool Midi Coat
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$15,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$25,99</span>
+                            </div>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-3.jpg"
+                                        data-src="assets/images/product/product-3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Dark Blue</span>
+                                    <span class="swatch-value bg-dark-blue-gray"></span>
+                                    <img src="assets/images/product/product-3_3.jpg"
+                                        data-src="assets/images/product/product-3_3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Beige</span>
+                                    <span class="swatch-value bg-stone-beige"></span>
+                                    <img src="assets/images/product/product-3_4.jpg"
+                                        data-src="assets/images/product/product-3_4.jpg" alt="Image">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 14 -->
+                    <div class="card-product grid" data-availability="In Stock" data-brand="Nike">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-2.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-2_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 sale">-25%</li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Buttons cotton top
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$29,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$49,99</span>
+                            </div>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-2.jpg"
+                                        data-src="assets/images/product/product-2.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Beige</span>
+                                    <span class="swatch-value bg-stone-beige"></span>
+                                    <img src="assets/images/product/product-2_3.jpg"
+                                        data-src="assets/images/product/product-2_3.jpg" alt="Image">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 15 -->
+                    <div class="card-product grid" data-availability="In Stock" data-brand="Louis Vuitton">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-1.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-1_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="product-badge_list">
+                                <li class="product-badge_item text-caption-01 new">NEW</li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#quickAdd" data-bs-toggle="modal" class="tf-btn btn-white small  w-100">
+                                    Quick Add
+
+                                </a>
+                            </div>
+                            <div class="product-marquee_sale">
+                                <div class="marquee-wrapper">
+                                    <div class="initial-child-container">
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 1 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 2 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 3 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 4 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                        <!-- 5 -->
+                                        <div class="marquee-child-item">
+                                            HOT SALE 25% OFF
+                                        </div>
+                                        <i class="icon icon-Star2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                Lyocell wrap top
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$69,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$99,99</span>
+                            </div>
+                            <ul class="product-color_list">
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
+                                    <span class="tooltip color-filter">Brown</span>
+                                    <span class="swatch-value bg-muted-brown"></span>
+                                    <img src="assets/images/product/product-1.jpg"
+                                        data-src="assets/images/product/product-1.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Dark Blue</span>
+                                    <span class="swatch-value bg-dark-blue-gray"></span>
+                                    <img src="assets/images/product/product-1_3.jpg"
+                                        data-src="assets/images/product/product-1_3.jpg" alt="Image">
+                                </li>
+                                <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
+                                    <span class="tooltip color-filter">Gray</span>
+                                    <span class="swatch-value bg-soft-gray"></span>
+                                    <img src="assets/images/product/product-1_4.jpg"
+                                        data-src="assets/images/product/product-1_4.jpg" alt="Image">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product 16 -->
+                    <div class="card-product grid" data-availability="In Stock" data-brand="Nike">
+                        <div class="card-product_wrapper">
+                            <a href="/productdetails" class="product-img">
+                                <img class="img-product" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-4.jpg" alt="Product">
+                                <img class="img-hover" loading="lazy" width="330" height="440"
+                                    src="assets/images/product/product-4_2.jpg" alt="Product">
+                            </a>
+                            <ul class="product-action_list">
+                                <li class="wishlist">
+                                    <a href="#;" class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="compare">
+                                    <a href="#compare" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-ArrowsLeftRight"></span>
+                                        <span class="tooltip">Compare</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#quickView" data-bs-toggle="offcanvas"
+                                        class="hover-tooltip tooltip-left box-icon">
+                                        <span class="icon icon-Eye"></span>
+                                        <span class="tooltip">Quick view</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="product-action_bot">
+                                <a href="#shoppingCart" data-bs-toggle="offcanvas" class="tf-btn btn-white small  w-100">
+                                    Add to Cart
+
+                                </a>
+                            </div>
+                            <div class="product-countdown">
+                                <div class="js-countdown cd-has-zero" data-timer="1093120" data-labels="D : ,H : ,M : ,S">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-product_info">
+                            <a href="/productdetails" class="name-product lh-24 fw-medium link-underline-text">
+                                linen slim-fit shirt
+                            </a>
+                            <div class="star-wrap d-flex align-items-center">
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                                <i class="icon icon-Star"></i>
+                            </div>
+                            <div class="price-wrap">
+                                <span class="price-new text-primary fw-semibold">$45,99</span>
+                                <span class="price-old text-caption-01 cl-text-3">$79,99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="wd-full justify-content-center">
+                        <div class="tf-page-pagination">
+                            <a href="#" class="pag-item">1</a>
+                            <p class="pag-item active">2</p>
+                            <a href="#" class="pag-item">3</a>
+                            <a href="#" class="pag-item">
+                                <i class="icon icon-CaretRightThin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Shop -->
+@endsection
